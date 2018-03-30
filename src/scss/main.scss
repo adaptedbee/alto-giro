@@ -1,0 +1,16 @@
+/* stylelint-disable */
+@import '../bower_components/normalize.css/normalize';
+@import '../bower_components/swiper/dist/css/swiper.min';
+/* stylelint-enable */
+
+@import 'common/__helpers';
+@import 'common/fonts';
+@import 'common/general';
+@import 'common/mixins';
+
+@import 'components/__ui';
+@import 'components/header';
+@import 'components/product';
+@import 'components/product-info';
+@import 'components/product-slider';
+@import 'components/footer';

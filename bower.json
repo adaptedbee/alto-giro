@@ -1,0 +1,24 @@
+{
+  "name": "most-starter-kit",
+  "description": "Frontend starter kit",
+  "main": "",
+  "authors": [
+    "Mikhail Savotikov <adaptedbee@yandex.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "device.js": "devicejs#^0.2.7",
+    "normalize.css": "~5.0.0",
+    "skrollr": "^0.6.30",
+    "swiper": "^4.2.0",
+  }
+}

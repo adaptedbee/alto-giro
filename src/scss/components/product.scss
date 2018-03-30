@@ -1,0 +1,388 @@
+.product {
+  position: relative;
+}
+
+.product__photo-wrapper {
+  width: 68vw;
+  height: 957px;
+  position: relative;
+
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 43px;
+    left: 50px;
+    z-index: 5;
+
+    width: 100%;
+    height: 90.2%;
+    background-color: rgba(254,223,193, 0.4);
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    &::after {
+      top: 5%;
+      left: 0px;
+
+      width: 105%;
+      height: 90%;
+    }
+  }
+  @media (max-width: 1023px) {
+    width: 40vw;
+    height: 159vw;
+
+    background-position: center center;
+
+    &::after {
+      top: 10vw;
+      left: 0;
+
+      width: 50vw;
+      height: 140vw;
+    }
+  }
+}
+
+.product__photo-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product__wrapper {
+  position: absolute;
+  top: 131px;
+  left: 50%;
+  margin-left: -688px;
+  z-index: 10;
+
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    width: 100%;
+    margin-left: auto;
+    transform: translateX(-50%);
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    margin-left: -512px;
+  }
+  @media (max-width: 1023px) {
+    top: 32vw;
+
+    margin-left: auto;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+}
+
+.product__info {
+  width: 450px;
+  margin-top: 171px;
+  position: absolute;
+  top: 131px;
+  left: 50%;
+  margin-left: -688px;
+  z-index: 10;
+
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    margin-left: -41vw;
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    width: 380px;
+    margin-left: -450px;
+  }
+  @media (max-width: 1023px) {
+    width: 88%;
+    max-width: 540px;
+    margin: 125px auto 0;
+    top: 0;
+    left: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -142px;
+      left: 50%;
+      margin-left: -1px;
+
+      width: 2px;
+      height: 125px;
+      background-color: #000000;
+    }
+  }
+}
+
+.product__type {
+  @include subtitle();
+
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
+}
+
+.product__headline {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  @include headline2();
+
+  @media (max-width: 1023px) {
+    margin-bottom: 9px;
+
+    text-align: center;
+  }
+}
+
+.product__description {
+  margin-top: 0;
+  margin-bottom: 17px;
+
+  @include sofiapro-light();
+  font-size: 14px;
+  line-height: 1.79;
+  letter-spacing: 1px;
+  color: #0b0b0b;
+
+  @media (max-width: 767px) {
+    margin-bottom: 16px;
+
+    font-size: 9px;
+    text-align: center;
+  }
+}
+
+.product__form {
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
+}
+
+.product__controls {
+  margin-bottom: 29px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1023px) {
+    margin: 0 auto 49px;
+    max-width: 364px;
+  }
+}
+
+.product__value-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product__value {
+  width: 41px;
+
+  @include futuraptdemi-regular();
+  font-size: 12px;
+  line-height: 2.17;
+  color: #0b0b0b;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    width: 26px;
+  }
+}
+
+.product__menu {
+  margin-top: 56px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+  width: 1430px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    padding-left: 6%;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.product__menu li {
+  margin-right: 54px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.product__menu-link {
+  @include futuraptdemi-regular();
+  font-size: 10px;
+  line-height: 2.5;
+  letter-spacing: 4px;
+  color: #0b0b0b;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product__slider {
+  width: 422px;
+  height: auto;
+  margin-left: 808px;
+  z-index: 10;
+  position: relative;
+
+  @media (min-width: 1441px) and (max-width: 1679px) {
+    margin-left: 750px;
+  }
+  @media (min-width: 1280px) and (max-width: 1440px) {
+    margin-left: 54vw;
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    margin-left: 512px;
+  }
+  @media (max-width: 1023px) {
+    width: 72vw;
+    margin: 0 auto;
+  }
+}
+
+.product__slider-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.product__slide {
+  width: 100%;
+  height: 100%;
+}
+
+.product__slide-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product__slider-controls {
+  position: absolute;
+  top: 161px;
+  right: -200px;
+  z-index: 10;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+  @media (min-width: 1441px) and (max-width: 1679px) {
+    right: -150px;
+  }
+  @media (min-width: 1280px) and (max-width: 1440px) {
+    right: -100px;
+  }
+  @media (max-width: 1279px) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -15px;
+  }
+}
+
+.product__slider-control-item {
+  margin-bottom: 69px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+
+    width: 0px;
+    height: 2px;
+    background-color: #000000;
+
+    transition: .3s;
+  }
+  &--active::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+
+    width: 300px;
+    height: 2px;
+    background-color: #000000;
+  }
+  &:hover::after {
+    width: 300px;
+  }
+
+  @media (max-width: 1279px) {
+    margin-bottom: 20px;
+    height: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -2px;
+
+      width: 32px;
+      height: 2px;
+      background-color: #000000;
+    }
+    &--active::after {
+      width: 65px;
+      height: 2px;
+    }
+  }
+}
+
+.product__slider-control {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  @include futuraptdemi-regular();
+  font-size: 10px;
+  line-height: 2;
+  letter-spacing: 4px;
+  text-align: right;
+  color: #000000;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  @media (max-width: 1279px) {
+    visibility: hidden;
+  }
+}

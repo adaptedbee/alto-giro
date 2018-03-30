@@ -1,0 +1,77 @@
+@mixin header-menu() {
+  @include futurapt-medium();
+  font-size: 10px;
+  line-height: 2.5;
+  letter-spacing: 4px;
+  color: #0b0b0b;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  @media (max-width: 767px) {
+    line-height: 13px;
+  }
+}
+
+@mixin subtitle() {
+  margin-top: 0;
+  margin-bottom: 1px;
+
+  @include futurapt-medium();
+  font-size: 12px;
+  line-height: 1.33; // 16px
+  letter-spacing: 12px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    margin-bottom: 4px;
+
+    font-size: 10px;
+    letter-spacing: 10px;
+  }
+}
+
+@mixin headline2() {
+  @include futurapt-medium();
+  font-size: 35px;
+  line-height: 1.29; // 45px
+  letter-spacing: 12px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+    line-height: 1.32;
+    letter-spacing: 8px;
+  }
+}
+
+@mixin headline2-big() {
+  @include futurapt-medium();
+  font-size: 50px;
+  line-height: 1.4;
+  letter-spacing: 20px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    font-size: 35px;
+    line-height: 1.29;
+    letter-spacing: 14px;
+  }
+}
+
+@mixin info-text() {
+  @include sofiapro-light();
+  font-size: 14px;
+  line-height: 2.5;
+  letter-spacing: 1px;
+  color: #0b0b0b;
+
+  @media (max-width: 767px) {
+    font-size: 9px;
+    line-height: 2.67;
+  }
+}

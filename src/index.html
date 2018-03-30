@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Alto Giro</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <button class="header__menu-button">Menu</button>
+      <ul class="header__menu">
+        <li><a class="header__menu-link" href="#">Activities</a></li>
+        <li><a class="header__menu-link" href="#">Tops</a></li>
+        <li><a class="header__menu-link" href="#">Bottoms</a></li>
+        <li><a class="header__menu-link" href="#">Accessories</a></li>
+        <li><a class="header__menu-link" href="#">Culture</a></li>
+      </ul>
+      <a class="header__logo" href="#">AG</a>
+      <a class="header__cart" href="#">
+        <p class="header__cart-name">Cart</p>
+        <div class="header__cart-count">
+          <span class="header__cart-count-bracket">(</span>0<span class="header__cart-count-bracket">)</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Alto Giro</h1>
+
+    <section class="product">
+      <div class="product__inner">
+        <div class="product__photo-wrapper" style="background-image:url(./img/product.jpg);"></div>
+        <div class="product__wrapper">
+          <div class="product__slider">
+            <div class="product__slider-inner swiper-container">
+              <div class="swiper-wrapper">
+                <div class="product__slide swiper-slide">
+                  <img class="product__slide-image" src="./img/product-slide02.jpg"
+                    srcset="./img/product-slide02@2x.jpg 2x, ./img/product-slide02@3x.jpg 3x"
+                    width="423" height="650" alt="Img 001" />
+                </div>
+                <div class="product__slide swiper-slide">
+                  <img class="product__slide-image" src="./img/product-slide02.jpg"
+                    srcset="./img/product-slide02@2x.jpg 2x, ./img/product-slide02@3x.jpg 3x"
+                    width="423" height="650" alt="Img 002" />
+                </div>
+                <div class="product__slide swiper-slide">
+                  <img class="product__slide-image" src="./img/product-slide02.jpg"
+                    srcset="./img/product-slide02@2x.jpg 2x, ./img/product-slide02@3x.jpg 3x"
+                    width="423" height="650" alt="Img 003" />
+                </div>
+              </div>
+            </div>
+
+            <ul class="product__slider-controls" data-100p-top="top: 161px;" data-5p-top="top: 211px;">
+              <li class="product__slider-control-item product__slider-control-item--active">
+                <button class="product__slider-control" data-number="1">Img 001</button>
+              </li>
+              <li class="product__slider-control-item">
+                <button class="product__slider-control" data-number="2">Img 002</button>
+              </li>
+              <li class="product__slider-control-item">
+                <button class="product__slider-control" data-number="3">Img 003</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="product__menu">
+            <li><a class="product__menu-link" href="#">About this item</a></li>
+            <li><a class="product__menu-link" href="#">Similar items</a></li>
+            <li><a class="product__menu-link" href="#">Scroll down</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product__info">
+        <p class="product__type">Collection</p>
+        <h2 class="product__headline">Bikini &mdash; Mykonos</h2>
+        <p class="product__description">The same top of the line accessories you’re used to but we have formulated these specifically for your activite lifestyle.</p>
+        <form class="product__form">
+          <div class="product__controls">
+            <select class="select">
+              <option>Red</option>
+              <option>Green</option>
+              <option>Blue</option>
+            </select>
+            <div class="product__value-control">
+              <button class="round-button" type="button">-</button>
+              <p class="product__value">0</p>
+              <button class="round-button" type="button">+</button>
+            </div>
+          </div>
+          <button class="button" type="submit">Add to Cart</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="product-info">
+      <div class="product-info__inner">
+        <div class="product-info__wrapper">
+          <div class="product-info__shift-images">
+            <div class="product-info__image-wrapper product-info__image-wrapper--front">
+              <img class="product-info__image" src="./img/photo/photo01.jpg"
+              srcset="./img/photo/photo01@2x.jpg 2x, ./img/photo/photo01@3x.jpg 3x" width="520" height="820" alt="" />
+            </div>
+            <div class="product-info__image-wrapper product-info__image-wrapper--back product-info__image-wrapper--right-down" data-100p-top="top: -95px;" data-0p-top="top: 95px;">
+              <img class="product-info__image" src="./img/photo/photo02.jpg"
+              srcset="./img/photo/photo02@2x.jpg 2x, ./img/photo/photo02@3x.jpg 3x" width="520" height="820" alt="" />
+            </div>
+          </div>
+
+          <div class="product-info__info">
+            <p class="product-info__type">Bikini info</p>
+            <h2 class="product-info__headline">Mykonos</h2>
+            <div class="product-info__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate esse cillum dolore eu fugiat nulla cillum dolore eu fugiat eu.</p>
+              <p>Are you interested and want to know more? Click the link below.</p>
+            </div>
+            <a class="button" href="#">About Us</a>
+          </div>
+        </div>
+
+        <div class="product-info__promo">
+          <p class="product-info__promo-text">The Highest Quality</p>
+        </div>
+
+        <div class="product-info__wrapper">
+          <div class="product-info__info product-info__info--mt">
+            <p class="product-info__type">High Quality</p>
+            <h3 class="product-info__headline">Materials Used</h3>
+            <div class="product-info__text">
+              <ul>
+                <li>Material Item 001</li>
+                <li>Material Item 002</li>
+                <li>Material Item 003</li>
+                <li>Material Item 004</li>
+                <li>Material Item 005</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="product-info__shift-images">
+            <div class="product-info__image-wrapper product-info__image-wrapper--back product-info__image-wrapper--left-up" data-100p-top="top: -95px;" data-0p-top="top: 95px;">
+              <img class="product-info__image" src="./img/photo/photo02.jpg"
+              srcset="./img/photo/photo02@2x.jpg 2x, ./img/photo/photo02@3x.jpg 3x" width="520" height="820" alt="" />
+            </div>
+            <div class="product-info__image-wrapper product-info__image-wrapper--front">
+              <img class="product-info__image" src="./img/photo/photo04.jpg"
+              srcset="./img/photo/photo04@2x.jpg 2x, ./img/photo/photo04@3x.jpg 3x" width="520" height="820" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-slider">
+      <h2 class="product-slider__headline">Related Items</h2>
+      <div class="product-slider__inner swiper-container">
+        <button class="product-slider__control product-slider__control--prev swiper-button-prev">Prev Item</button>
+        <div class="product-slider__wrapper swiper-wrapper">
+          <div class="product-slider__slide swiper-slide">
+              <img class="product-slider__slide-image" src="./img/slider/slide01.jpg"
+                srcset="./img/slider/slide01@2x.jpg 2x, ./img/slider/slide01@3x.jpg 3x"
+                width="228" height="350" alt="Bathing Suit 1 — $55" />
+              <h3 class="product-slider__slide-headline">Bathing Suit 1 — $55</h3>
+              <p class="product-slider__slide-description">New Swimwear Collection</p>
+              <a class="button" href="#">View Item</a>
+          </div>
+          <div class="product-slider__slide swiper-slide">
+              <img class="product-slider__slide-image" src="./img/slider/slide02.jpg"
+                srcset="./img/slider/slide02@2x.jpg 2x, ./img/slider/slide02@3x.jpg 3x"
+                width="426" height="655" alt="Bathing Suit 1 — $55" />
+              <h3 class="product-slider__slide-headline">Bathing Suit 1 — $55</h3>
+              <p class="product-slider__slide-description">New Swimwear Collection</p>
+              <a class="button" href="#">View Item</a>
+          </div>
+          <div class="product-slider__slide swiper-slide">
+              <img class="product-slider__slide-image" src="./img/slider/slide03.jpg"
+                srcset="./img/slider/slide03@2x.jpg 2x, ./img/slider/slide03@3x.jpg 3x"
+                width="228" height="350" alt="Bathing Suit 1 — $55" />
+              <h3 class="product-slider__slide-headline">Bathing Suit 1 — $55</h3>
+              <p class="product-slider__slide-description">New Swimwear Collection</p>
+              <a class="button" href="#">View Item</a>
+          </div>
+        </div>
+        <button class="product-slider__control product-slider__control--next swiper-button-next">Next Item</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <ul class="footer__menu">
+        <li><a class="footer__menu-link" href="#">Home</a></li>
+        <li><a class="footer__menu-link" href="#">About Us</a></li>
+        <li><a class="footer__menu-link" href="#">Contact Us</a></li>
+        <li><a class="footer__menu-link" href="#">Culture</a></li>
+      </ul>
+
+      <div class="footer__logo-wrapper">
+        <a class="footer__logo" href="#">Alto Giro</a>
+        <p class="footer__copyright">&copy; 2017 Alto Giro, All rights reserved</p>
+      </div>
+
+      <ul class="footer__social">
+        <li>
+          <a class="footer__social-link" href="#">
+            <span class="visually-hidden">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16"><path fill-rule="evenodd" d="M5.681 15.516V8.59h2.07l.337-3.078H5.681v-1.5c0-.792.02-1.578 1.11-1.578h1.104V.233c0-.033-.948-.108-1.907-.108C3.984.125 2.73 1.4 2.73 3.742v1.77H.516V8.59H2.73v6.926h2.95z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="footer__social-link" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13"><path fill-rule="evenodd" d="M5.28 12.438c5.714 0 8.84-4.738 8.84-8.846 0-.135 0-.269-.01-.402a6.313 6.313 0 0 0 1.55-1.61 6.186 6.186 0 0 1-1.784.49A3.12 3.12 0 0 0 15.242.35a6.225 6.225 0 0 1-1.973.755A3.11 3.11 0 0 0 7.974 3.94 8.823 8.823 0 0 1 1.57.693a3.112 3.112 0 0 0 .963 4.15 3.082 3.082 0 0 1-1.411-.39v.04A3.11 3.11 0 0 0 3.615 7.54a3.09 3.09 0 0 1-1.403.053 3.11 3.11 0 0 0 2.903 2.16A6.231 6.231 0 0 1 .516 11.04a8.795 8.795 0 0 0 4.763 1.394"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="footer__social-link" href="#">
+            <span class="visually-hidden">Instagram</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M4.517.094C3.264.151 2.178.457 1.302 1.33.422 2.208.119 3.298.062 4.538c-.034.773-.24 6.62.357 8.152a3.879 3.879 0 0 0 2.24 2.234c.487.189 1.042.317 1.858.355 6.819.308 9.346.14 10.412-2.589.19-.486.32-1.041.356-1.855.311-6.836-.05-8.318-1.24-9.505-.942-.94-2.05-1.58-9.528-1.236m.063 13.81c-.747-.034-1.152-.158-1.422-.263a2.505 2.505 0 0 1-1.454-1.449C1.25 11.027 1.4 5.495 1.441 4.6c.04-.877.218-1.679.836-2.297.766-.764 1.755-1.138 8.491-.834.88.04 1.683.217 2.303.834.766.764 1.145 1.76.836 8.47-.034.745-.158 1.15-.263 1.42-.693 1.775-2.288 2.022-9.064 1.71M10.843 3.61a.919.919 0 1 0 1.839 0 .919.919 0 0 0-1.84 0m-7.1 4.077a3.927 3.927 0 0 0 3.932 3.922 3.927 3.927 0 0 0 3.932-3.922 3.926 3.926 0 0 0-3.932-3.921 3.926 3.926 0 0 0-3.932 3.921m1.38 0A2.55 2.55 0 0 1 7.674 5.14a2.55 2.55 0 0 1 2.552 2.546 2.55 2.55 0 0 1-2.552 2.547 2.55 2.55 0 0 1-2.552-2.547"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+</html>
